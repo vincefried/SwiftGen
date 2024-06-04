@@ -20,13 +20,13 @@ Then name the script phase anyway you like, and write the script invoking SwiftG
 For example, your Script Build Phase should look like this if you integrated SwiftGen via CocoaPods:
 
 ```sh
-"$PODS_ROOT/SwiftGen/bin/swiftgen"
+"${PODS_ROOT}/SwiftGen/bin/swiftgen"
 ```
 
 Or like this if you downloaded SwiftGen via the ZIP installation method and unzipped it at the root of your repository:
 
 ```sh
-"$PROJECT_ROOT/SwiftGen/bin/swiftgen"
+"${PROJECT_DIR}/SwiftGen/bin/swiftgen"
 ```
 
 Or could look like this if you installed `swiftgen` system-wide with homebrew (adding some security in case your coworkers didn't install SwiftGen on their machine)
